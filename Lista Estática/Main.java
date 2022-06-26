@@ -1,3 +1,6 @@
+//Lista estática.
+//Trabalhando com inserção, busca e remoção de elementos de um vetor.
+
 public class Main {
     public static void main(String[] args) throws Exception {
 
