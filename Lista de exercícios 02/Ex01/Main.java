@@ -1,3 +1,5 @@
+//Escrever um algoritmo que lê um vetor N (20) e que imprima os valores de N. Troque, a seguir, o 1o elemento com o último, o 2o com o penúltimo etc. 
+//até o 10o com o 11o e escreva o vetor N assim modificado.
 public class Main {
     public static void main(String[] args) {
         
