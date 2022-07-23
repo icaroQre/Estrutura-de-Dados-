@@ -1,0 +1,54 @@
+public class Conta {
+    
+    private String nomeTitular;
+    private String numeroConta;
+    private long saldoConta;
+
+    Conta(){
+        nomeTitular="";
+        numeroConta="";
+        saldoConta=0;
+    }
+
+    Conta(String nomeTitular, String numeroConta, long saldoConta){
+        this.nomeTitular = nomeTitular;
+        this.numeroConta = numeroConta;
+        this.saldoConta = saldoConta;
+    }
+
+    public String getNomeTitular() {
+        return nomeTitular;
+    }
+    public void setNomeTitular(String nomeTitular){
+        this.nomeTitular = nomeTitular;
+    }
+
+    public String getNumeroConta() {
+        return numeroConta;
+    }
+    public void setNumeroConta(String numeroConta){
+        this.numeroConta = numeroConta;
+    }
+
+    public long getSaldoConta() {
+        return saldoConta;
+    }
+    public void setSaldoConta(long saldoConta){
+        this.saldoConta = saldoConta;
+    }
+
+    public void depositar(long num){
+        System.out.println("\nDepositando: " + num + " em: " + getNomeTitular());
+        setSaldoConta(getSaldoConta()+num);
+    }
+    public void sacar(long num){
+        if((getSaldoConta()-num) < 0){
+            System.out.println("\nNão é possivel sacar a quantia de: " + num + " de: " + getNomeTitular());
+            return;
+        }
+        else{
+            System.out.println("\nSacando: " + num + " de: " + getNomeTitular());
+            setSaldoConta(getSaldoConta()-num);
+        }
+    }
+}
