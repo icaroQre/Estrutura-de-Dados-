@@ -1,0 +1,5 @@
+b) a conexão dos objetos é feita por dois ponteiros (um que aponta para o elemento anterior e próximo). Se for no início, coloca o anterior do início como o novo e o início como
+novo. E se for no fim o próximo depois do fim vira o novo e o fim recebe o novo.
+
+c) é necessário a utilização de um ponteiro apontando para o próximo elemento do nó
+e um apontando para o elemento anterior do nó. Também é utilizado um ponteiro para o início e um para o fim da lista.
